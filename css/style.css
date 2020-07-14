@@ -2,6 +2,8 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --primary-background-color:
+    --primary-white-color: #FFFFFF;
 }
 
 
@@ -20,4 +22,28 @@ p{
 /*цвет загаловков*/
 .features-title .work-title .about-us-title .clients-title{
     color: var(--title-text-color);
+}
+/*цвет кнопки*/
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-bacground-color);
+}
+.button.primary{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.button.secondary{
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}
+/* цвет логотипа */
+.part-logo {
+    color: #2196F3;
+}
+/* Web Studio */
+.full-logo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
 }
