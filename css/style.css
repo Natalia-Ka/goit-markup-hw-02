@@ -3,27 +3,59 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-background-color:
-    --primary-white-color: #FFFFFF;
+    --primary-white-color: #FFFFFF; 
+    --primary-white-color: #FFFFFF; 
 }
-
 
 
 body
-
-/*цвет главного текста */
-p{
-    color: var(--primary-text-color);
-}
-
 /*убираем точки*/
     .list{
         list-style: none;
     }
 
-/*цвет загаловков*/
-.features-title .work-title .about-us-title .clients-title{
-    color: var(--title-text-color);
+/* заголовок шапки */
+.hero-title{ 
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    text-align: center;
+    color: var(--primary-white-color); 
 }
+.hero{
+    background-color: rgba(47, 48, 58, 0.8);   
+}
+
+/* загаловки */
+.features-title, .work-title, .about-us-title, .clients-title{
+    color: var(--title-text-color); 
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;  
+}
+
+/* подзагаловки особенности */
+.features-subtitle{
+    color: var(--title-text-color); 
+    font-family: Roboto;    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+}
+
+/*содержание особенности */
+.features-paragraph {
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+}
+
+
 /*цвет кнопки*/
 .button {
     color: var(--title-text-color);
