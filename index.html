@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheets" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
     <!--Верхняя линия-->
     <header>
         <nav>
-          <spam class="full-logo"><a href="./index.html"><span class="part-logo">Web</span>Studio</a></spam>
+          <a href="./index.html" class="logo-link"><span class="first-part-logo">Web</span><span class="second-part-logo">Studio</span></a>
 
-        <ul>
-            <li><a href="">Студия</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+        <ul class="list">
+            <li><a href="" class="menu-link">Студия</a></li>
+            <li><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+            <li><a href="" class="menu-link">Контакты</a></li>
          </ul>
         </nav>
 
         <div>
-        <ul> 
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li> <a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list"> 
+            <li><a href="mailto:info@devstudio.com" class="menu-contacts">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="menu-contacts">+38 096 111 11 11</a></li>
         </ul>
         </div> 
  
@@ -33,18 +35,18 @@
     <main>
     <!--Шапка-->
     <section class="hero"> 
-        <h1 class="hero-title"> Эффективные решения для вашего бизнеса </h1>
-        <button type="button" class="button.primary"><a href="">Заказать услугу</a></button> 
+        <h1 class="hero-title"> Эффективные решения <br> для вашего бизнеса </h1>
+        <button><a href="" class="btn">Заказать услугу</a></button> 
     </section>
 
     <!--Особенности-->
     <section class="features">
-      <h2 class="features-title">Особенности</h2>
+      <h2 hidden class="features-title">Особенности</h2>
         <ul class="list">
             <li>  
                 <img src="./images/antenna-1.svg" alt="antenna" width="70" />
                 <h3 class="features-subtitle">Внимание к деталям</h3>
-                <p class="features-paragraph"> 
+                <p class="features-description"> 
                     Идейные соображения, а также начало повседневной работы по 
                     формированию позиции.
                 </p>
@@ -52,7 +54,7 @@
             <li> 
                 <img src="./images/clock-1.svg" alt="clock" width="70" />
                 <h3 class="features-subtitle">Пунктуальность</h3>
-                <p class="features-paragraph"> 
+                <p class="features-description"> 
                     Задача организации, в особенности же рамки и место обучения
                     кадров влечет за собой.
                 </p>
@@ -60,7 +62,7 @@
             <li> 
                 <img src="./images/diagram-1.svg" alt="diagram" width="70" />
                 <h3 class="features-subtitle"> Планирование</h3>
-                <p class="features-paragraph"> 
+                <p class="features-description"> 
                     Равным образом консультация с широким активом в значительной 
                     степени обуславливает.
                 </p>
@@ -68,7 +70,7 @@
             <li> 
                 <img src="./images/astronaut-1.svg" alt="astronaut" width="70" />
                 <h3 class="features-subtitle"> Современные технологии</h3>
-                <p class="features-paragraph"> 
+                <p class="features-description"> 
                     Значимость этих проблем настолько очевидна, 
                     что реализация плановых заданий.
                 </p>
@@ -82,15 +84,15 @@
         <ul class="list">
             <li>
                 <img src="./images/img.jpg" alt="desktop app" width="370"/> 
-              <h3>Десктопные приложени</h3>
+              <h3 class="work-description">Десктопные приложени</h3>
             </li>
             <li>
                 <img src="./images/box2.jpg" alt="mobile app" width="370"/>
-                <h3>Мобильные приложения</h3>
+                <h3 class="work-description">Мобильные приложения</h3>
             </li>
             <li>
                 <img src="./images/box3.jpg" alt="design solutions" width="370"/>
-                <h3>Дизайнерские решения</h3>
+                <h3 class="work-description">Дизайнерские решения</h3>
             </li>
         </ul>
     </section>
@@ -102,8 +104,8 @@
           <ul class="list"> 
             <li> 
               <img src="./images/card1.jpg" alt="Nicolay Kurchenko фотография" width="270"/> 
-              <h4>Николай Кучеренко</h4>
-              <p>Product Designer</p>
+              <h4 class="about-us-subtitle">Николай Кучеренко</h4>
+              <p class="about-us-description">Product Designer</p>
 
               <ul> 
                   <li><a href="" aria-label="ссылка Instagram">Instagram</a></li>
@@ -115,8 +117,8 @@
 
             <li>
               <img src="./images/card2.jpg" alt="Olga Ivanova фотография" width="270"/> 
-              <h4>Ольга Иванова</h4>
-              <p>Frontend Developer</p>
+              <h4 class="about-us-subtitle"> Ольга Иванова</h4>
+              <p class="about-us-description">Frontend Developer</p>
 
               <ul> 
                   <li><a href="" aria-label="ссылка Instagram">Instagram</a></li>
@@ -128,8 +130,8 @@
 
             <li>
               <img src="./images/card3.jpg" alt="Andrey Shevchenko фотография" width="270"/> 
-              <h4>Андрей Шевченко</h4>
-              <p>Marketing</p>
+              <h4 class="about-us-subtitle">Андрей Шевченко</h4>
+              <p class= "about-us-description">Marketing</p>
 
               <ul> 
                   <li><a href="" aria-label="ссылка Instagram">Instagram</a></li>
@@ -141,8 +143,8 @@
 
             <li>
               <img src="./images/card4.jpg" alt="Ivan Nikolaev фотография" width="270"/> 
-              <h4>Иван Николаев</h4>
-              <p>UI Designer</p>
+              <h4 class="about-us-subtitle">Иван Николаев</h4>
+              <p class="about-us-description">UI Designer</p>
 
               <ul> 
                   <li><a href="" aria-label="ссылка Instagram">Instagram</a></li>
@@ -171,20 +173,20 @@
 
     <!--Подвал-->
 
-    <footer>
+    <footer class="footer">
 
       <div>
-        <a href="./index.html">Web Studio</a>
+        <a href="./index.html" class="logo-link"><span class="first-part-logo">Web</span><span class="second-part-logo color">Studio</span></a>
 
         <address>
-         <p>г. Киев, пр-т Леси Украинки, 26<br/>
-         <a href="mailto:info@example.com">info@example.com</a><br/>
-         <a href="tel:+380991111111">+38 099 111 11 11</a></p>
+         <p class="footer-address">г. Киев, пр-т Леси Украинки, 26<br/>
+         <a href="mailto:info@example.com" class="footer-address-contacts">info@example.com</a><br/>
+         <a href="tel:+380991111111" class="footer-address-contacts"> +38 099 111 11 11</a></p>
         </address>
       </div>
    
       <div>
-          <b>присоединяйтесь</b>
+          <b class="footer-c2a">присоединяйтесь</b>
           <ul>
           <li><a href="" aria-label="ссылка Instagram">Instagram</a></li>
           <li><a href="" aria-label="ссылка на Twitter">Twitter</a></li>
@@ -194,9 +196,9 @@
       </div>
         
       <div>
-        <b>Подпишитесь на рассылку</b>
+        <b class="footer-c2a">Подпишитесь на рассылку</b>
         <input type ="text"/>
-        <button type="submit">Подписаться</button>
+        <button type="submit" class="btn">Подписаться</button>
       </div>
 
     </footer>

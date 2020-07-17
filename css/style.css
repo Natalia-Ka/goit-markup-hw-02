@@ -2,82 +2,200 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primary-background-color:
+    --primary-background-color:#2196F3;
     --primary-white-color: #FFFFFF; 
     --primary-white-color: #FFFFFF; 
 }
 
-
-body
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
 /*убираем точки*/
     .list{
         list-style: none;
     }
-
-
-/* заголовок шапки */
-.hero-title{ 
-    font-family: Roboto;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1,36;
-    text-align: center;
-    color: var(--primary-white-color); 
-}
-.hero{
-    background-color: rgba(47, 48, 58, 0.8);   
-}
-
-/* загаловки */
-.features-title, .work-title, .about-us-title, .clients-title{
-    color: var(--title-text-color); 
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1,17;
-    text-align: center;  
-}
-
-/* подзагаловки особенности */
-.features-subtitle{
-    color: var(--title-text-color); 
-    font-family: Roboto;    
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1,14;
-}
-
-/*содержание особенности */
-.features-paragraph {
-    color: var(--primary-text-color);
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1,71;
-}
-
-
-/*цвет кнопки*/
-.button {
-    color: var(--title-text-color);
-    background-color: var(--primary-bacground-color);
-}
-.button.primary{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-.button.secondary{
+/* логотип Web */
+.first-part-logo {
     color: var(--accent-color);
-    background-color: var(--primary-white-color);
-}
-/* цвет логотипа */
-.part-logo {
-    color: #2196F3;
-}
-/* Web Studio */
-.full-logo{
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
+/* логотип Studio */
+.second-part-logo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+/* подчеркивание логотип */
+.logo-link{
+    text-decoration: none;
+}
+/* меню */
+.menu-link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color)
+}
+/* меню контакты */
+.menu-contacts{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.menu-contacts:hover,
+.menu-contacts:focus{
+    color: var(--accent-color)
+}
+/* заголовок шапки */
+.hero-title{ 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--primary-white-color); 
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* фон шапки */
+.hero{
+    background-color: rgba(47, 48, 58, 0.8);   
+}
+/* кнопка в шапке */
+.btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:var(--primary-white-color);
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+/* загаловки */
+.features-title, .work-title, .about-us-title, .clients-title{
+    color: var(--title-text-color); 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center; 
+}
+/* подзагаловки особенности */
+.features-subtitle{
+    color: var(--title-text-color);    
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+/*содержание особенности */
+.features-description {
+    color: var(--primary-text-color);
+    line-height: 1.71;
+}
+/*содержание чем занимаемся*/
+.work-description{
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8); 
+}
+/* заголовок секции наша команда */
+.about-us-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;   
+    color: var(--title-text-color);
+}
+/*содержание секции наша команда*/
+.about-us-description{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center; 
+    color: var(--primary-text-color);
+}
+/* фон подвал */
+.footer{
+    background-color: #2F303A;
+}
+/* цвет логотипа 2 часть -подвал */
+.color{
+    color: var(--primary-white-color);
+}
+/* адрес подвал */
+.footer-address{
+    line-height: 1.71;
+    color: var(--primary-white-color); 
+    font-style: normal; 
+}
+/* адрес контактные данные -подвал */
+.footer-address-contacts{
+    font-style: normal;
+    line-height: 1.71;  
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+/* призыв к действию - подвал  */
+.footer-c2a{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase; 
+    color: var(--primary-white-color);
+}
+
+/* портфолио - фильтры */
+.portfolio-filters{
+    font-family: Roboto; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;   
+    color: var(--title-text-color);
+}
+.portfolio-filters:hover,
+.portfolio-filters:focus{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+/* портфолио - загаловок */
+.portfolio-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);  
+}
+/* портфолио - подзаголовок */
+.portfolio-subtitle{
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+
+
+
+
+
