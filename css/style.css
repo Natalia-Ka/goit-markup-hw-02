@@ -19,28 +19,24 @@ body{
     .list{
         list-style: none;
     }
-/* логотип Web */
-.first-part-logo {
-    color: var(--accent-color);
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-}
-/* логотип Studio */
-.second-part-logo{
+/* логотип */
+.logo{
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--title-text-color);
     letter-spacing: 0.03em;
-}
-
-/* подчеркивание логотип */
-.logo-link{ 
     text-decoration: none;
+}
+/* логотип web */
+.logo-web{
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 /* меню */
 .menu-link{
@@ -143,8 +139,14 @@ body{
     background-color: #2F303A;
 }
 /* цвет логотипа 2 часть -подвал */
-.color{
+.logo-footer{
     color: var(--primary-white-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 /* адрес подвал */
 .footer-address{
